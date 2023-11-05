@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- "background shadow" -->
+    <item android:padding="3dp">
+        <shape>
+            <solid android:color="#1032DE" />
+            <corners android:radius="10dp" />
+        </shape>
+    </item>
+    <!-- background color -->
+    <item android:bottom="3dp"
+        android:left="3dp"
+        android:right="3dp"
+        android:top="3dp">
+        <shape>
+            <solid android:color="#FFFF" />
+            <corners android:radius="10dp" />
+        </shape>
+    </item>
+</layer-list>

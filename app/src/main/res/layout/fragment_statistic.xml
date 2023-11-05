@@ -1,0 +1,802 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/background">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Thống Kê"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_marginTop="10dp"/>
+    <!--Tổng tiền-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/report_border_radius"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/wallet"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="5dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tổng tiền"
+                android:textColor="#707070"
+                android:textStyle="bold"
+                android:textSize="20dp"
+                android:layout_gravity="left"
+                android:layout_marginLeft="5dp"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="25dp"
+                    android:text="10.000.000.000 đ"
+                    android:textColor="#1032DE"
+                    android:textStyle="bold"
+                    android:textSize="20dp"
+                    android:gravity="left"
+                    android:layout_marginLeft="5dp"/>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:src="@drawable/eye"
+                    android:layout_gravity="center"
+                    android:layout_marginRight="20dp"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+    <!--    button xem-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="38dp"
+        android:orientation="horizontal"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/btnXemChiTiet"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:backgroundTint="#D9D9D9"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:text="Xem chi tiết"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold">
+
+        </Button>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1">
+        </TextView>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="2023"
+            android:textSize="15dp"
+            android:textColor="@color/black"
+            android:backgroundTint="#FFFFFF"
+            android:padding="0dp"
+            android:textStyle="bold"
+            android:layout_gravity="right">
+        </Button>
+    </LinearLayout>
+    <!--    sơ đồ-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/report_border_radius"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:text="Thu"></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="bottom">
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="65dp"
+                    android:layout_marginLeft="5.5dp"
+                    android:layout_marginRight="5.5dp"
+                    android:background="@drawable/report_thu"
+                    android:gravity="bottom"
+                    android:textSize="13dp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="5.5dp"
+                    android:layout_marginRight="5.5dp"
+                    android:background="@drawable/report_thu"
+                    android:gravity="bottom"
+                    android:textSize="13dp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="66dp"
+                    android:layout_marginLeft="5.5dp"
+                    android:layout_marginRight="5.5dp"
+                    android:background="@drawable/report_thu"
+                    android:gravity="bottom"
+                    android:textSize="13dp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="44dp"
+                    android:layout_marginLeft="5.5dp"
+                    android:layout_marginRight="5.5dp"
+                    android:background="@drawable/report_thu"
+                    android:gravity="bottom"
+                    android:textSize="13dp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="5.5dp"
+                    android:layout_marginRight="5.5dp"
+                    android:background="@drawable/report_thu"
+                    android:gravity="bottom"
+                    android:textSize="13dp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="64dp"
+                    android:layout_marginLeft="5.5dp"
+                    android:layout_marginRight="5.5dp"
+                    android:background="@drawable/report_thu"
+                    android:gravity="bottom"
+                    android:textSize="13dp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="33dp"
+                    android:layout_marginLeft="5.5dp"
+                    android:layout_marginRight="5.5dp"
+                    android:background="@drawable/report_thu"
+                    android:gravity="bottom"
+                    android:textSize="13dp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="70dp"
+                    android:layout_marginLeft="5.5dp"
+                    android:layout_marginRight="5.5dp"
+                    android:background="@drawable/report_thu"
+                    android:gravity="bottom"
+                    android:textSize="13dp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="44dp"
+                    android:layout_marginLeft="5.5dp"
+                    android:layout_marginRight="5.5dp"
+                    android:background="@drawable/report_thu"
+                    android:gravity="bottom"
+                    android:textSize="13dp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="5.5dp"
+                    android:layout_marginRight="5.5dp"
+                    android:background="@drawable/report_thu"
+                    android:gravity="bottom"
+                    android:textSize="13dp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="63dp"
+                    android:layout_marginLeft="5.5dp"
+                    android:layout_marginRight="5.5dp"
+                    android:background="@drawable/report_thu"
+                    android:gravity="bottom"
+                    android:textSize="13dp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="5.5dp"
+                    android:layout_marginRight="5.5dp"
+                    android:background="@drawable/report_thu"
+                    android:gravity="bottom"
+                    android:textSize="13dp">
+
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="70dp">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:text="Chi"></TextView>
+
+            <LinearLayout
+                android:layout_width="250dp"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="5.5dp"
+                    android:layout_marginRight="5.5dp"
+                    android:background="@drawable/report_chi"
+                    android:gravity="top"
+                    android:textSize="13dp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="5.5dp"
+                    android:layout_marginRight="5.5dp"
+                    android:background="@drawable/report_chi"
+                    android:gravity="top"
+                    android:textSize="13dp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="5.5dp"
+                    android:layout_marginRight="5.5dp"
+                    android:background="@drawable/report_chi"
+                    android:gravity="top"
+                    android:textSize="13dp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="5.5dp"
+                    android:layout_marginRight="5.5dp"
+                    android:background="@drawable/report_chi"
+                    android:gravity="top"
+                    android:textSize="13dp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="44dp"
+                    android:layout_marginLeft="5.5dp"
+                    android:layout_marginRight="5.5dp"
+                    android:background="@drawable/report_chi"
+                    android:gravity="top"
+                    android:textSize="13dp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="53dp"
+                    android:layout_marginLeft="5.5dp"
+                    android:layout_marginRight="5.5dp"
+                    android:background="@drawable/report_chi"
+                    android:gravity="top"
+                    android:textSize="13dp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="22dp"
+                    android:layout_marginLeft="5.5dp"
+                    android:layout_marginRight="5.5dp"
+                    android:background="@drawable/report_chi"
+                    android:gravity="top"
+                    android:textSize="13dp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5.5dp"
+                    android:layout_marginRight="5.5dp"
+                    android:background="@drawable/report_chi"
+                    android:gravity="top"
+                    android:textSize="13dp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="22dp"
+                    android:layout_marginLeft="5.5dp"
+                    android:layout_marginRight="5.5dp"
+                    android:background="@drawable/report_chi"
+                    android:gravity="top"
+                    android:textSize="13dp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5.5dp"
+                    android:layout_marginRight="5.5dp"
+                    android:background="@drawable/report_chi"
+                    android:gravity="top"
+                    android:textSize="13dp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="5.5dp"
+                    android:layout_marginRight="5.5dp"
+                    android:background="@drawable/report_chi"
+                    android:gravity="top"
+                    android:textSize="13dp">
+
+                </TextView>
+
+                <TextView
+                    android:layout_width="10dp"
+                    android:layout_height="63dp"
+                    android:layout_marginLeft="5.5dp"
+                    android:layout_marginRight="5.5dp"
+                    android:background="@drawable/report_chi"
+                    android:gravity="top"
+                    android:textSize="13dp">
+
+                </TextView>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="10dp"
+                android:gravity="center"
+                android:text="Tháng"></TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:layout_width="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="4dp"
+                    android:layout_marginRight="2.5dp"
+                    android:gravity="center"
+                    android:text="1"
+                    android:textSize="12dp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:layout_width="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="2.5dp"
+                    android:gravity="center"
+                    android:text="2"
+                    android:textSize="12dp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:layout_width="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="2.5dp"
+                    android:gravity="center"
+                    android:text="3"
+                    android:textSize="12dp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:layout_width="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="2.5dp"
+                    android:gravity="center"
+                    android:text="4"
+                    android:textSize="12dp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:layout_width="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="2.5dp"
+                    android:gravity="center"
+                    android:text="5"
+                    android:textSize="12dp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:layout_width="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="2.5dp"
+                    android:gravity="center"
+                    android:text="6"
+                    android:textSize="12dp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:layout_width="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="2.5dp"
+                    android:gravity="center"
+                    android:text="7"
+                    android:textSize="12dp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:layout_width="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="2.5dp"
+                    android:gravity="center"
+                    android:text="8"
+                    android:textSize="12dp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:layout_width="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="2.5dp"
+                    android:gravity="center"
+                    android:text="9"
+                    android:textSize="12dp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:layout_width="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="2.5dp"
+                    android:gravity="center"
+                    android:text="10"
+                    android:textSize="12dp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:layout_width="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="2.5dp"
+                    android:gravity="center"
+                    android:text="11"
+                    android:textSize="12dp"
+                    android:textStyle="bold"></TextView>
+
+                <TextView
+                    android:layout_width="15dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="2.5dp"
+                    android:gravity="center"
+                    android:text="12"
+                    android:textSize="12dp"
+                    android:textStyle="bold"></TextView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <!--    Phân tích thu chi-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Phân tích thu chi:  "
+                android:textStyle="bold"
+                android:textSize="15dp">
+            </TextView>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lấy số liệu từ 4 danh mục chính"
+                android:textStyle="bold"
+                android:textSize="14dp"
+                android:textColor="#655A5A">
+            </TextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="5dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="175dp"
+                    android:layout_height="12dp"
+                    android:background="#FA3A30"></TextView>
+
+                <TextView
+                    android:layout_width="175dp"
+                    android:layout_height="match_parent"
+                    android:text="50%"
+                    android:textColor="#000000"
+                    android:textSize="13dp"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="105dp"
+                    android:layout_height="12dp"
+                    android:background="#FAF830"></TextView>
+
+                <TextView
+                    android:layout_width="105dp"
+                    android:layout_height="match_parent"
+                    android:text="30%"
+                    android:textColor="#000000"
+                    android:textSize="13dp"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="52.5dp"
+                    android:layout_height="12dp"
+                    android:background="#EA11FA"></TextView>
+
+                <TextView
+                    android:layout_width="52.5dp"
+                    android:layout_height="match_parent"
+                    android:text="15%"
+                    android:textColor="#000000"
+                    android:textSize="13dp"></TextView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="17.5dp"
+                    android:layout_height="12dp"
+                    android:background="#20FA5D"></TextView>
+
+                <TextView
+                    android:layout_width="17.5dp"
+                    android:layout_height="match_parent"
+                    android:maxLines="1"
+                    android:text="5%"
+                    android:textColor="#000000"
+                    android:textSize="13dp"></TextView>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <!--    chức năng-->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+            <LinearLayout
+                android:layout_width="160dp"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:background="@drawable/report_border_radius">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/bill"
+                    android:layout_marginRight="10dp"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginRight="5dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Thanh toán"
+                        android:textStyle="bold"></TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-12.000.000"
+                        android:textStyle="bold"
+                        android:textColor="#F7077F"></TextView>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+            </TextView>
+            <LinearLayout
+                android:layout_width="160dp"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:background="@drawable/report_border_radius"
+                android:layout_gravity="right">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/food"
+                    android:layout_marginRight="10dp"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginRight="5dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Đồ ăn"
+                        android:textStyle="bold"></TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-20.000.000"
+                        android:textStyle="bold"
+                        android:textColor="#F7077F"></TextView>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp">
+            <LinearLayout
+                android:layout_width="160dp"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:background="@drawable/report_border_radius">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/cart"
+                    android:layout_marginRight="10dp"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginRight="5dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cửa hàng"
+                        android:textStyle="bold"></TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-6.000.000"
+                        android:textStyle="bold"
+                        android:textColor="#F7077F"></TextView>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+            </TextView>
+            <LinearLayout
+                android:layout_width="160dp"
+                android:layout_height="50dp"
+                android:orientation="horizontal"
+                android:background="@drawable/report_border_radius"
+                android:layout_gravity="right">
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/transportation"
+                    android:layout_marginRight="10dp"/>
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_marginRight="5dp">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Di chuyển"
+                        android:textStyle="bold"></TextView>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="-600.000"
+                        android:textStyle="bold"
+                        android:textColor="#F7077F"></TextView>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

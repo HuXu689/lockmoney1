@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.StatisticDetailActivity">
+
+    <LinearLayout android:gravity="start"
+        android:id="@+id/View"
+        android:layout_height="match_parent"
+        android:layout_width="match_parent"
+        android:orientation="vertical" style="@style/groupStylewhite_A700">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarToolbar"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            app:contentInsetStart="0dp">
+            <LinearLayout android:gravity="start"
+                android:id="@+id/linearRowarrowback"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="horizontal" style="@style/groupStyleindigo_A700cornerRadius">
+                <ImageView android:id="@+id/imageArrowback"
+                    android:layout_height="@dimen/_15pxh"
+                    android:layout_marginBottom="@dimen/_77pxv"
+                    android:layout_marginStart="@dimen/_20pxh"
+                    android:layout_marginTop="@dimen/_12pxv"
+                    android:layout_width="@dimen/_10pxh"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/img_arrowback"
+                    tools:ignore="ContentDescription" tools:src="@drawable/img_arrowback"/>
+                <LinearLayout android:gravity="center_horizontal"
+                    android:id="@+id/linearColumnthngk"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/_30pxv"
+                    android:layout_marginEnd="@dimen/_20pxh"
+                    android:layout_marginTop="@dimen/_5pxv"
+                    android:layout_weight="0.97"
+                    android:layout_width="0dp" android:orientation="vertical">
+                    <TextView android:ellipsize="end"
+                        android:id="@+id/txtThngk"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="@dimen/_96pxh"
+                        android:layout_marginStart="@dimen/_96pxh"
+                        android:layout_width="wrap_content"
+                        android:singleLine="true"
+                        android:text="Thống kê"
+                        style="@style/txtIntersemibold24" tools:text="@string/lbl_th_ng_k"/>
+                    <LinearLayout android:id="@+id/linearRowzipcode"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/_9pxv"
+                        android:layout_width="match_parent" android:orientation="horizontal">
+                        <LinearLayout
+                            android:id="@+id/linearComboboxlisty"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.3"
+                            android:layout_width="0dp"
+                            android:orientation="horizontal" style="@style/groupStylewhite_A700cornerRadius">
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtZipcode"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/_6pxv"
+                                android:layout_marginStart="@dimen/_10pxh"
+                                android:layout_marginTop="@dimen/_7pxv"
+                                android:layout_weight="0.69"
+                                android:layout_width="0dp"
+                                android:singleLine="true"
+                                android:text="2023"
+                                style="@style/txtIntersemibold13" tools:text="@string/lbl_2023"/>
+                            <ImageView
+                                android:id="@+id/imageIconarrowbott"
+                                android:layout_height="@dimen/_10pxh"
+                                android:layout_marginBottom="@dimen/_10pxv"
+                                android:layout_marginEnd="@dimen/_5pxh"
+                                android:layout_marginStart="@dimen/_6pxh"
+                                android:layout_marginTop="@dimen/_10pxv"
+                                android:layout_width="@dimen/_15pxh"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/img_iconarrowbott"
+                                tools:ignore="ContentDescription" tools:src="@drawable/img_iconarrowbott"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/linearComboboxlistm"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_40pxh"
+                            android:layout_weight="0.43"
+                            android:layout_width="0dp"
+                            android:orientation="horizontal" style="@style/groupStylewhite_A700cornerRadius">
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtThngCounter"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/_5pxv"
+                                android:layout_marginStart="@dimen/_10pxh"
+                                android:layout_marginTop="@dimen/_8pxv"
+                                android:layout_weight="0.8"
+                                android:layout_width="0dp"
+                                android:singleLine="true"
+                                android:text="Tháng 10"
+                                style="@style/txtIntersemibold13" tools:text="@string/lbl_th_ng_10"/>
+                            <ImageView
+                                android:id="@+id/imageIconarrowbottOne"
+                                android:layout_height="@dimen/_10pxh"
+                                android:layout_marginBottom="@dimen/_10pxv"
+                                android:layout_marginEnd="@dimen/_5pxh"
+                                android:layout_marginStart="@dimen/_11pxh"
+                                android:layout_marginTop="@dimen/_10pxv"
+                                android:layout_width="@dimen/_15pxh"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/img_iconarrowbott"
+                                tools:ignore="ContentDescription" tools:src="@drawable/img_iconarrowbott"/>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:id="@+id/linearComboboxlistc"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="@dimen/_40pxh"
+                            android:layout_weight="0.26"
+                            android:layout_width="0dp"
+                            android:orientation="horizontal" style="@style/groupStylewhite_A700cornerRadius">
+                            <TextView android:ellipsize="end"
+                                android:id="@+id/txtChi"
+                                android:layout_height="wrap_content"
+                                android:layout_marginBottom="@dimen/_6pxv"
+                                android:layout_marginStart="@dimen/_10pxh"
+                                android:layout_marginTop="@dimen/_7pxv"
+                                android:layout_weight="0.58"
+                                android:layout_width="0dp"
+                                android:singleLine="true"
+                                android:text="Chi"
+                                style="@style/txtIntersemibold13" tools:text="@string/lbl_chi"/>
+                            <ImageView
+                                android:id="@+id/imageIconarrowbottTwo"
+                                android:layout_height="@dimen/_10pxh"
+                                android:layout_marginBottom="@dimen/_10pxv"
+                                android:layout_marginEnd="@dimen/_5pxh"
+                                android:layout_marginStart="@dimen/_8pxh"
+                                android:layout_marginTop="@dimen/_10pxv"
+                                android:layout_width="@dimen/_15pxh"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/img_iconarrowbott"
+                                tools:ignore="ContentDescription" tools:src="@drawable/img_iconarrowbott"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </androidx.appcompat.widget.Toolbar>
+        <FrameLayout android:id="@+id/frameStatisticdetai"
+            android:layout_height="@dimen/_505pxv"
+            android:layout_marginTop="@dimen/_15pxv"
+            android:layout_width="match_parent" style="@style/groupStylewhite_A700">
+            <LinearLayout android:id="@+id/linearColumndoughnutchart"
+                android:layout_gravity="start"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_10pxv"
+                android:layout_width="match_parent"
+                android:orientation="vertical" style="@style/groupStylegray_100">
+                <FrameLayout android:id="@+id/frameDonutChart"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="@dimen/_250pxv"
+                    android:layout_marginEnd="@dimen/_55pxh"
+                    android:layout_marginStart="@dimen/_55pxh" android:layout_width="@dimen/_250pxh">
+                    <com.github.mikephil.charting.charts.PieChart
+                        android:id="@+id/piechart"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        />
+                </FrameLayout>
+                <ListView
+                    android:id="@+id/lvItem"
+                    android:layout_width="match_parent"
+                    android:layout_height="360dp" />
+            </LinearLayout>
+
+        </FrameLayout>
+    </LinearLayout>
+</FrameLayout>

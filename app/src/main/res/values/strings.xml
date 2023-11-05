@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<resources>
+    <string name="app_name">LockMoney</string>
+    <string name="loading">Loading…</string>
+    <string name="no_internet_connection">No internet connection!</string>
+    <string name="lbl_chi">Chi</string>
+    <string name="lbl_di_chuy_n">Di chuyển</string>
+    <string name="lbl_20_000_000">- 20.000.000đ</string>
+    <string name="lbl_30">30%</string>
+    <string name="lbl_n">Đồ ăn</string>
+    <string name="lbl_12_000_000">- 12.000.000đ</string>
+    <string name="lbl_50">50%</string>
+    <string name="lbl_th_ng_k">Thống kê</string>
+    <string name="lbl_c_a_h_ng">Cửa hàng</string>
+    <string name="lbl_6_000_000">- 6.000.000đ</string>
+    <string name="lbl_th_ng_10">Tháng 10</string>
+    <string name="lbl_5">5%</string>
+    <string name="lbl_thanh_to_n">Thanh toán</string>
+    <string name="lbl_600_000">- 600.000đ</string>
+    <string name="lbl_15">15%</string>
+    <string name="lbl_2023">2023</string>
+    <string name="lbl_10_giao_d_ch">10 giao dịch</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

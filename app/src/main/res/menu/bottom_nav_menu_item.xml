@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <item
+        android:id="@+id/Home"
+        android:layout_height="@dimen/_30pxh"
+        android:layout_marginBottom="@dimen/_15pxv"
+        android:layout_marginStart="@dimen/_20pxh"
+        android:layout_marginTop="@dimen/_25pxv"
+        android:layout_width="@dimen/_30pxh"
+        android:scaleType="fitXY"
+        android:icon="@drawable/img_iconhomegray"
+        tools:ignore="ContentDescription"
+        android:title="Home" />
+    <item
+        android:id="@+id/Statistic"
+        android:layout_height="@dimen/_30pxh"
+        android:layout_marginBottom="@dimen/_15pxv"
+        android:layout_marginStart="@dimen/_35pxh"
+        android:layout_marginTop="@dimen/_25pxv"
+        android:layout_width="@dimen/_35pxh"
+        android:scaleType="fitXY"
+        android:icon="@drawable/img_iconstatistic_30x35"
+        tools:ignore="ContentDescription"
+        android:title="Statistic" />
+    <item
+        android:id="@+id/Write"
+        android:layout_height="@dimen/_40pxh"
+        android:layout_marginBottom="@dimen/_25pxv"
+        android:layout_marginStart="@dimen/_45pxh"
+        android:layout_marginTop="@dimen/_5pxv"
+        android:layout_width="@dimen/_40pxh"
+        android:scaleType="fitXY"
+        android:icon="@drawable/img_iconwrite"
+        tools:ignore="ContentDescription"
+        android:title="Write" />
+    <item
+        android:id="@+id/Goals"
+        android:layout_height="@dimen/_30pxh"
+        android:layout_marginBottom="@dimen/_15pxv"
+        android:layout_marginStart="@dimen/_45pxh"
+        android:layout_marginTop="@dimen/_25pxv"
+        android:layout_width="@dimen/_30pxh"
+        android:scaleType="fitXY"
+        android:icon="@drawable/img_icongoalsgray"
+        tools:ignore="ContentDescription"
+        android:title="Goals" />
+    <item
+        android:id="@+id/Settings"
+        android:layout_height="@dimen/_30pxh"
+        android:layout_marginBottom="@dimen/_15pxv"
+        android:layout_marginEnd="@dimen/_20pxh"
+        android:layout_marginStart="@dimen/_30pxh"
+        android:layout_marginTop="@dimen/_25pxv"
+        android:layout_width="@dimen/_30pxh"
+        android:scaleType="fitXY"
+        android:icon="@drawable/img_iconsettingsg"
+        tools:ignore="ContentDescription"
+        android:title="Settings" />
+
+</menu>

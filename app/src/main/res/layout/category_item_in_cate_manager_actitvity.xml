@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/linearItem"
+        style="@style/groupStylewhite_2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5">
+
+        <LinearLayout
+            android:id="@+id/linearRow"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5pxh"
+            android:layout_marginTop="@dimen/_5pxv"
+            android:layout_marginBottom="@dimen/_5pxv"
+            android:layout_weight="0.98"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/writeFrag_cate_item_image"
+                tools:ignore="ContentDescription"
+                android:layout_width="@dimen/_40pxh"
+                android:layout_height="@dimen/_40pxh"
+                android:background="@drawable/rectangle_bg_red_500_19_radius_20"
+                android:paddingHorizontal="@dimen/_9pxh"
+                android:paddingVertical="@dimen/_9pxv"
+                android:scaleType="fitCenter"
+                android:src="@drawable/img_imagefood" />
+
+            <LinearLayout
+                android:id="@+id/linearColumnn"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_14pxh"
+                android:layout_marginTop="@dimen/_6pxv"
+                android:layout_marginBottom="@dimen/_6pxv"
+                android:layout_weight="0.57"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/writeFrag_cate_item_name"
+                    style="@style/txtIntersemibold12"
+                    tools:text="@string/lbl_n"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:textSize="20sp"
+                    android:singleLine="true" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageIconarrowrigh"
+            tools:ignore="ContentDescription"
+            tools:src="@drawable/img_iconarrowrigh"
+            android:layout_width="@dimen/_5pxh"
+            android:layout_height="@dimen/_10pxh"
+            android:layout_marginStart="@dimen/_10pxh"
+            android:layout_marginTop="@dimen/_20pxv"
+            android:layout_marginEnd="@dimen/_15pxh"
+            android:layout_marginBottom="@dimen/_20pxv"
+            android:scaleType="fitXY"
+            android:src="@drawable/img_iconarrowrigh" />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
