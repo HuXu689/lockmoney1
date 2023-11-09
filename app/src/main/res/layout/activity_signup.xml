@@ -54,6 +54,7 @@
         android:textSize="15sp" />
 
     <EditText
+        android:id="@+id/txt_username"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginLeft="30dp"
@@ -74,7 +75,7 @@
         android:textSize="15sp" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/txt_fullname"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginLeft="30dp"
@@ -96,14 +97,15 @@
 
 
     <EditText
+        android:id="@+id/txt_email"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
         android:background="@drawable/bg_edittext_shadow"
         android:freezesText="false"
-        android:selectAllOnFocus="false"
         android:paddingLeft="10px"
+        android:selectAllOnFocus="false"
         android:textSize="20sp" />
 
     <TextView
@@ -117,6 +119,7 @@
 
 
     <EditText
+        android:id="@+id/txt_password"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginLeft="30dp"
@@ -137,23 +140,24 @@
 
 
     <EditText
+        android:id="@+id/txt_confirm_password"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
         android:background="@drawable/bg_edittext_shadow"
         android:freezesText="false"
-        android:selectAllOnFocus="false"
         android:paddingLeft="10px"
+        android:selectAllOnFocus="false"
         android:textSize="20sp" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/txtv_delete_user"
         android:layout_width="match_parent"
         android:layout_height="55dp" />
 
     <TextView
-        android:id="@+id/txvxacnhan"
+        android:id="@+id/txtv_confirm_in_signup"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_marginLeft="30dp"

@@ -205,7 +205,7 @@
         android:paddingTop="6dp">
 
         <TextView
-            android:id="@+id/textView6"
+            android:id="@+id/txtv_delete_user"
             android:layout_width="100dp"
             android:layout_height="match_parent"
             android:layout_marginLeft="30dp"

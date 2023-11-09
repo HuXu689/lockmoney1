@@ -54,7 +54,7 @@
         android:textSize="15sp" />
 
     <EditText
-        android:id="@+id/tbTaiKhoan"
+        android:id="@+id/txt_login_username"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginLeft="30dp"
@@ -76,7 +76,7 @@
 
 
     <EditText
-        android:id="@+id/tbMatKhau"
+        android:id="@+id/txt_login_password"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:layout_marginLeft="30dp"
@@ -88,12 +88,12 @@
         android:textSize="20sp" />
 
     <TextView
-        android:id="@+id/textView6"
+        android:id="@+id/txtv_delete_user"
         android:layout_width="match_parent"
         android:layout_height="65dp" />
 
     <TextView
-        android:id="@+id/txvxacnhan"
+        android:id="@+id/txtv_confirm_in_login"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_marginLeft="30dp"
@@ -107,10 +107,11 @@
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/textView"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:id="@+id/txtv_forgot_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
         android:paddingTop="30dp"
+        android:layout_gravity="center"
         android:text="Quên mật khẩu?"
         android:textAlignment="center"
         android:textSize="15sp" />

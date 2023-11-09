@@ -16,10 +16,10 @@
             android:name=".Activity.CategoryManagerActivity"
             android:exported="false" />
         <activity
-            android:name=".Activity.LoginActitvity"
+            android:name=".Activity.SignupActivity"
             android:exported="false" />
         <activity
-            android:name=".Activity.SignupActivity"
+            android:name=".Activity.MainActivity"
             android:exported="false" />
         <activity
             android:name=".Activity.AdminActivity"
@@ -37,7 +37,7 @@
             android:name=".Activity.AboutActivity"
             android:exported="false" />
         <activity
-            android:name=".Activity.MainActivity"
+            android:name=".Activity.LoginActitvity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

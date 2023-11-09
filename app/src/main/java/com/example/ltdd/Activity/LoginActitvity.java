@@ -4,39 +4,75 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
+import com.example.ltdd.DAO.DAO;
 import com.example.ltdd.R;
-import com.example.ltdd.fragment.SettingsFragment;
 
 public class LoginActitvity extends AppCompatActivity {
 
-    TextView txvxacnhan;
-    EditText tbTaiKhoan;
-    EditText tbMatKhau;
+
+    //<editor-fold defaultState="Collapse" desc="Khai báo">
+    private TextView txtv_confirm_in_login;
+    private EditText txt_login_username;
+    private EditText txt_login_password;
+    private String text_login_username, text_login_password;
+    private DAO dao;
+    //</editor-fold>
+
+    //<editor-fold defaultState="Collapse" desc="Internal Function">
+    private void LoadData(){
+        text_login_username = txt_login_username.getText().toString();
+        text_login_password = txt_login_password.getText().toString();
+    }
+    private String CheckData(){
+        return "";
+    }
+    //</editor-fold>
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        txvxacnhan = (TextView) findViewById(R.id.txvxacnhan);
-        tbTaiKhoan = (EditText) findViewById(R.id.tbTaiKhoan);
-        tbMatKhau = (EditText) findViewById(R.id.tbMatKhau);
+        //<editor-fold defaultState="collapse" desc="Liên kết với components">
+        txtv_confirm_in_login = (TextView) findViewById(R.id.txtv_confirm_in_login);
+        txt_login_username = (EditText) findViewById(R.id.txt_login_username);
+        txt_login_password = (EditText) findViewById(R.id.txt_login_password);
+        dao = new  DAO();
+        //</editor-fold>
 
-        txvxacnhan.setOnClickListener(view ->{
-            Intent intent;
-            if (tbTaiKhoan.getText().toString().equals("admin") && tbMatKhau.getText().toString().equals("admin"))
-                intent = new Intent(this, AdminActivity.class);
-            else
-                intent = new Intent(this, MainActivity.class);
-            startActivity(intent);
+        //<editor-fold defaultState="Collapse" desc="Xử lý sự kiện">
+        txtv_confirm_in_login.setOnClickListener(view ->{
+            LoadData();
+            String chk = CheckData();
+            if (chk.isEmpty()){
+                dao.loginUser(text_login_username, text_login_password, new DAO.returnResult() {
+                    @Override
+                    public void OnReturnResult(int result) {
+                        if(result >= 0){
+                            Toast.makeText(LoginActitvity.this, "Đăng nhập thành công!", Toast.LENGTH_SHORT).show();
+                            if(result == 1){
+                                startActivity(new Intent(LoginActitvity.this, AdminActivity.class));
+                            }
+                            else{
+                                startActivity(new Intent(LoginActitvity.this, MainActivity.class));
+                            }
+                        }
+                        else{
+                            Toast.makeText(LoginActitvity.this, "Đăng nhập thất bại!", Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                });
+            }
+            else{
+                Toast.makeText(this, chk, Toast.LENGTH_SHORT).show();
+            }
         });
         findViewById(R.id.imageArrowback).setOnClickListener(view ->{
-            Intent intent = new Intent(this, MainActivity.class);
-            startActivity(intent);
+            startActivity(new Intent(this, MainActivity.class));
         });
+        //</editor-fold>
     }
 }
