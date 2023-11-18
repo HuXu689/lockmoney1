@@ -80,8 +80,10 @@ public class SignupActivity extends AppCompatActivity {
                         if (result == 1){
                             Toast.makeText(SignupActivity.this, "Đăng ký tài khoản thành công!", Toast.LENGTH_SHORT).show();
                             startActivity(new Intent(SignupActivity.this, LoginActitvity.class));
-                        } else {
+                        } else if (result == 0){
                             Toast.makeText(SignupActivity.this, "Đăng ký tài khoản thất bại!", Toast.LENGTH_SHORT).show();
+                        } else if (result == -1){
+                            Toast.makeText(SignupActivity.this, "Username đã tồn tại", Toast.LENGTH_SHORT).show();
                         }
                     }});
             }

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "204134428345",
+    "project_id": "quanlychitieutest",
+    "storage_bucket": "quanlychitieutest.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:204134428345:android:411c8fccf51dfa2e52f568",
+        "android_client_info": {
+          "package_name": "com.example.ltdd"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCe6s9LleAB2V1tGqlnJkSB1MJxjp4E-pY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

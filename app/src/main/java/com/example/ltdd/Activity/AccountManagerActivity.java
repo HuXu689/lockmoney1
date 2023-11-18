@@ -54,13 +54,23 @@ public class AccountManagerActivity extends AppCompatActivity {
                     userAdater = new UserAdater(AccountManagerActivity.this, R.layout.user_item_in_admin, userList);
                     lv_user.setAdapter(userAdater);
                     //<editor-fold defaultState="Collapse" desc="Xóa user">
-                    lv_user.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                    /*lv_user.setOnItemClickListener(new AdapterView.OnItemClickListener() {
                         @Override
                         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                             String uid = userList.get(position).getUser_id();
-
+                            dao.deleteUser(uid, new DAO.returnResult() {
+                                @Override
+                                public void OnReturnResult(int result) {
+                                    if (result == 0){
+                                        Toast.makeText(AccountManagerActivity.this, "Lỗi: không thể xóa tài khoản", Toast.LENGTH_SHORT).show();
+                                    }
+                                    else {
+                                        Toast.makeText(AccountManagerActivity.this, "Đã xóa tài khoản", Toast.LENGTH_SHORT).show();
+                                    }
+                                }
+                            });
                         }
-                    });
+                    });*/
                     //</editor-fold>
                 }
                 @Override
